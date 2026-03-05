@@ -44,11 +44,13 @@ const Shorten = () => {
     fetch("api/generate", requestOptions)
       .then((response) => response.json())
       .then((result) => {
-        setgenerated(`${process.env.NEXT_PUBLIC_HOST}/${result.shorturl}`)
-        seturl("")
-        setshorturl("")
-        console.log(result)
         alert(result.message)
+        if (result.success) {
+          setgenerated(`${process.env.NEXT_PUBLIC_HOST}/${result.shorturl}`)
+          seturl("")
+          setshorturl("")
+        }
+        // console.log(result)
       })
       .catch((error) => console.error(error));
   }
@@ -58,7 +60,7 @@ const Shorten = () => {
       <div className='flex flex-col justify-start items-center gap-5'>
         <input className='p-2 w-full bg-white rounded-lg' value={url} type="text" placeholder='Enter your URLs' onChange={(e) => { seturl(e.target.value) }} />
         <input className='p-2 w-full bg-white rounded-lg' value={shorturl} type="text" placeholder='Enter your preferred short URL text' onChange={(e) => { setshorturl(e.target.value) }} />
-        <button onClick={generate} className='bg-purple-800 px-16 py-3 rounded-xl font-bold text-white my-5'>Generate</button>
+        <button type='button' onClick={generate} className='bg-purple-800 px-16 py-3 rounded-xl font-bold text-white my-5'>Generate</button>
       </div>
 
       {generated && <code>
