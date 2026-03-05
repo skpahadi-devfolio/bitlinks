@@ -44,7 +44,7 @@ const Shorten = () => {
     fetch("api/generate", requestOptions)
       .then((response) => response.json())
       .then((result) => {
-        setgenerated(`${process.env.NEXT_PUBLIC_HOST}/${shorturl}`)
+        setgenerated(`${process.env.NEXT_PUBLIC_HOST}/${result.shorturl}`)
         seturl("")
         setshorturl("")
         console.log(result)
