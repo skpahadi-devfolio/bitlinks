@@ -41,7 +41,7 @@ const Shorten = () => {
       redirect: "follow"
     };
 
-    fetch("api/generate", requestOptions)
+    fetch("/api/generate", requestOptions)
       .then((response) => response.json())
       .then((result) => {
         alert(result.message)
