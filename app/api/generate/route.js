@@ -16,5 +16,5 @@ return Response.json({ success: false,  error: true,  message: 'URL Already Exis
         url:  body.url,
         shorturl: body.shorturl
     })
-  return Response.json({ success: true,  error: false,  message: 'URL Generated sucessfullY' })
+  return Response.json({ success: true,  error: false,  message: 'URL Generated sucessfullY',shorturl: body.shorturl })
 }
