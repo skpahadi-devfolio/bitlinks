@@ -83,7 +83,7 @@ const contact = () => {
              {loading && (<div className='bg-slate-800 h-20 w-56 rounded-full animate-pulse flex flex-col items-center justify-center text-white font-bold '>
                 <p>Please Wait....</p>
                 <p>Loading Message </p></div>)}
-            <div className="mx-auto flex flex-col justify-center items-center my-10 gap-5 bg-pink-300 w-[95vw] md:w-[30vw] md:h-[60vh] max-h-[90vh] rounded-xl shadow-2xl transition-all duration-700 ease-in-out shadow-gray-800">
+            <div className="mx-auto flex flex-col justify-center items-center my-10 gap-5 bg-pink-300 w-[90vw] md:w-[30vw] md:h-[60vh] max-h-[90vh] rounded-xl shadow-2xl transition-all duration-700 ease-in-out shadow-gray-800">
                 <input onChange={handleChange} name='name' value={contact.name} className='bg-white md:w-[25vw] w-[85vw] rounded-lg p-3 focus:scale-105 transition-all duration-700 ease-in-out mt-7' type="text" placeholder='Enter your name' />
                 <input onChange={handleChange} name='email' value={contact.email} className='bg-white md:w-[25vw] w-[85vw] rounded-lg p-3 focus:scale-105 transition-all ease-in-out duration-700' type="text" placeholder='Enter your email' />
                 <textarea onChange={handleChange} value={contact.message} className='bg-white md:w-[25vw] w-[85vw] rounded-lg p-5 focus:scale-105 transition-all ease-in-out duration-700' name="message" type="message" placeholder='Enter your Message'></textarea>

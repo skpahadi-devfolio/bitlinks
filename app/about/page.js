@@ -44,7 +44,7 @@ const about = () => {
                 })}
             </div>
 
-            <div className="conclusion bg-purple-400  hover:scale-x-110 hover:transition-all hover:duration-700 hover:ease-in-out rounded-xl w-[95vw] md:w-[60vw] p-6 shadow-2xl shadow-slate-700">
+            <div className="conclusion bg-purple-400  hover:scale-x-110 hover:transition-all hover:duration-700 hover:ease-in-out rounded-xl w-[85vw] md:w-[60vw] p-6 shadow-2xl shadow-slate-700">
                 <p className='font-bold text-2xl underline'>Main Goal</p>
                 <p>Our mission is to make link sharing smarter, faster, and more efficient. We aim to provide a seamless experience for individuals, developers, businesses, and content creators who want clean and professional links.
 

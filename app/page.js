@@ -21,11 +21,11 @@ export default function Home() {
                     <Link href="/shorten"><button className='bg-purple-800 px-6 py-3 w-32 rounded-xl font-bold text-white'>Try Now</button></Link>
                   <AuthButton className='bg-purple-800 px-6 py-3 rounded-xl font-bold text-white' />
                 </div>
+        <div className="flex flex-col md:flex-row justify-start relative">
+         <Image className="mix-blend-darken" src={"/vector.jpg"} width={300} height={300} alt="An Image of Vector"/>
+        </div>
         </div>
 
-        <div className="flex justify-start relative">
-         <Image className="mix-blend-darken" src={"/vector.jpg"} fill={true} alt="An Image of Vector"/>
-        </div>
       </section>
     </main>
   );
